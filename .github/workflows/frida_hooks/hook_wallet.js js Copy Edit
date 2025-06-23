@@ -1,0 +1,9 @@
+Java.perform(function() {
+  var WalletManager = Java.use('com.app.WalletManager');
+  WalletManager.addCoins.implementation = function(amount) {
+    console.log('Original amount:', amount);
+    var newAmount = 9999999;
+    console.log('Modified amount:', newAmount);
+    return this.addCoins(newAmount);
+  };
+});
