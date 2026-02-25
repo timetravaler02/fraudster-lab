@@ -1,0 +1,5 @@
+selenium
+pyautogui
+speechrecognition
+pytesseract
+Pillow
